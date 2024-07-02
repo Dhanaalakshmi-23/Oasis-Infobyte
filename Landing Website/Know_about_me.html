@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Cpmpatible" content="IE=edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="Know_about_me.css">
+    <script src="https://kit.fontawesome.com/bcda26ec5e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <!--<img src="Images/Photo.jpg" alt="Photo" width="100" height="600">-->
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Highly motivated AI/ML enthusiast with a solid grasp of core algorithms, deep learning, and NLP. Proficient in Python and key libraries (scikit-learn, TensorFlow) for building and deploying models. Proven ability to solve complex problems with data-driven approaches. Continuously learning and eager to contribute to cutting-edge projects within a dynamic team, driving impactful results in the ever-evolving field of AI/ML. </p>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+                <p class="tab-links" onclick="opentab('score')">Score</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Machine Learning</span><br>Working on real time projects by applying Algorithms</li>
+                    <li><span>Deep Learning</span><br>Learning more about Detection Systems</li>
+                    <li><span>Web Development</span><br>Web Wizard: Crafting seamless digital experiences with code and creativity!</li>
+                    <li><span>Python Programming</span><br>Turning code into solutions, one line at a time!</li>
+                    <li><span>Natural Language Processing</span><br>Learning to Transform language into intelligent insights</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2018-2022</span><br>CMS Matric.Hr.Sec.School</li>
+                    <li><span>2022-2026</span><br>Student at Dr.Mahalingam college of engineering and technology</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="score">
+                <ul>
+                    <li><span>MAY 2022</span><br>80% at school</li>
+                    <li><span>MARCH 2024</span><br>CGPA : 9</li>
+
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-right">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> dhanaalakshminarayanan@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 965585xxxx</p>
+                <div class="social-icon">
+                    <a href="https://www.instagram.com/__dhanaa_23__/?hl=en"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/dhanaalakshmi/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links"); 
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+     for(tablink of tablinks){
+         tablink.classList.remove("active-link");
+     }
+     for(tabcontent of tabcontents){
+         tabcontent.classList.remove("active-tab")
+     }
+     event.currentTarget.classList.add("active-link");
+     document.getElementById(tabname).classList.add("active-tab")
+    }
+ </script>
+
+<script>
+
+ var sidemenu=document.getElementById("sidemenu");
+ function openmenu(){
+     sidemenu.style.right="0";
+ }
+ function closemenu(){
+     sidemenu.style.right="-200px"
+ }
+</script>
+</body>
